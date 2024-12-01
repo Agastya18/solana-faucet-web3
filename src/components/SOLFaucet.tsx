@@ -4,7 +4,7 @@ import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton, WalletDisconnectButton } from "@solana/wallet-adapter-react-ui";
 
-// import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
+
 import "@solana/wallet-adapter-react-ui/styles.css";
 
 const SOLFaucet: React.FC = () => {
