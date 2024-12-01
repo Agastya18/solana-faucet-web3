@@ -11,14 +11,14 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 
 
 function App () {
-  //const network = WalletAdapterNetwork.Devnet;
+  const network = WalletAdapterNetwork.Devnet;
 
- // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   const wallets = useMemo(() => [new UnsafeBurnerWalletAdapter()], []);
   
   return (
-    <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/3zUTbq11SLeqUkif4RQiJa_8kLp77yr8"}>
+    <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <section className="w-full bg-gray-800">
