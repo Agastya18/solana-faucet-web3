@@ -99,10 +99,8 @@ const SOLFaucet: React.FC = () => {
       </div>
 
       <p className="text-center max-w-xl">
-        Why does this exist? Because it's{" "}
-        <span className="text-yellow-500 font-bold">
-          WEB3-Chorot-Assignment!!
-        </span>
+        Why does this exist?
+        
         <br />I kept wanting to try out all the <em>awesome new projects</em>{" "}
         coming out on the Solana blockchain web3 course, but I had no way to
         easily fund my testnet wallet. Enter{" "}
